@@ -81,9 +81,15 @@ justify-content:space-between;
 
 /* images */
 .imgs-menu {
-  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
-
+.imgs-menu h1 {
+  max-width: 300px;
+  border-left: 5px solid #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 .imgs-menu img {
   width: 100%;
   height: auto;
@@ -152,7 +158,12 @@ justify-content:space-between;
   .looding-img {
     width: 150px;
   }
-
+.imgs-menu h1 {
+    max-width: 200px;
+    border-left: 5px solid #000000;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
   .location h1 {
     max-width: 200px;
     border-left: 5px solid #000000;
