@@ -1,3 +1,3 @@
 setTimeout(() => {
-    window.location.href = "location.html"
-},3000)
+    window.location.href = "menu.html"
+},4000)
