@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Amiri+Quran&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&family=Federant&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Momo+Signature&family=Mulish:ital,wght@0,1000;1,1000&family=Noto+Nastaliq+Urdu:wght@400..700&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Nastaliq Urdu", serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+}
+
+/* loading */
+.looding {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4b826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.looding-img {
+  width: 300px;
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+  animation: landing 1.5s ease-in infinite;
+}
+
+/* animation */
+@keyframes landing {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+/* header */
+.restrunt-header {
+  width: 100%;
+  background-color: #f4b826;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* navbar */
+.nav-bar {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Noto Nastaliq Urdu", serif;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-bar li a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* images */
+.imgs-menu {
+  width: 100%;
+}
+
+.imgs-menu img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* location */
+.location {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.qr {
+  width: 100%;
+}
+.qr img {
+  max-width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+/* ===================== */
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-bar li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .looding-img {
+    width: 200px;
+  }
+}
+
+/* 📲 Small Mobile */
+@media (max-width: 480px) {
+  .nav-bar li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .looding-img {
+    width: 150px;
+  }
+
+  .location h1 {
+    max-width: 200px;
+    border-left: 5px solid #000000;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+.footer {
+  background-color: #be890371;
+  color: #000000;
+  /* padding-top: 30px; */
+  /* margin-top: 40px; */
+}
+
+.footer-container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+.footer-section img {
+  max-width: 100px;
+  height: auto;
+}
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 16px;
+  color: #030303cc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #f4b826;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+/* bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #181818;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #030303cc;
+}
+/* ===================== */
+/* ✨ Smooth transitions عامة */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===================== */
+/* 🔥 Navbar Animation */
+.nav-bar li a {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.nav-bar li a:hover::after {
+  width: 100%;
+}
+
+/* ===================== */
+/* 🚀 Header Animation */
+.restrunt-header {
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== */
+/* 🖼️ Images Animation */
+.imgs-menu img {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.imgs-menu img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* ===================== */
+/* 📍 Location Animation */
+.location {
+  animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== */
+/* 🗺️ Map Hover Effect */
+.map-container {
+  transition: transform 0.4s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.02);
+}
+
+/* ===================== */
+/* 🔳 QR Animation */
+.qr img {
+  transition: transform 0.4s ease;
+}
+
+.qr img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* ===================== */
+/* 🧾 Footer Animation */
+.footer {
+  animation: fadeUp 1.5s ease;
+}
+
+.footer-section {
+  transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+  transform: translateY(-5px);
+}
+
+/* ===================== */
+/* ✨ Loading pulse أقوى */
+.looding-img {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
