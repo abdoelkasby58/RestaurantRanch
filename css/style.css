@@ -102,6 +102,12 @@ justify-content:space-between;
   padding: 20px;
   text-align: center;
 }
+.location h1 {
+  max-width: 300px;
+  border-left: 5px solid #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 .map-container {
   width: 100%;
   max-width: 1000px;
